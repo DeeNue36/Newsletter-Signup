@@ -9,6 +9,19 @@
     --p-font-size: 16px;
 }
 
-html, body{
+html, body {
     font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--neutral-color-one);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--neutral-color-four);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
 }
