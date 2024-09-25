@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+
+:root {
     --primary-color: hsl(4, 100%, 67%);
     --neutral-color-one: hsl(234, 29%, 20%);
     --neutral-color-two: hsl(235, 18%, 26%);
@@ -15,13 +21,83 @@ html, body {
 
 body {
     background-color: var(--neutral-color-one);
+    height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
     background-color: var(--neutral-color-four);
     border-radius: 8px;
     padding: 20px;
+    /* height: 500px; */
     display: flex;
+    column-gap: 25px;
+}
+
+.newsletter-details {
+    /* padding: 50px 25px; */
+    place-content: center; /* OR place-self: center; */
+}
+
+.newsletter-heading {
+    font-size: 36px;
+    color: var(--neutral-color-one);
+    padding-bottom: 20px;
+}
+
+.newsletter-subheading {
+    padding-bottom: 20px;
+}
+
+.benefits {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.list-icon {
+    width: 20.99px;
+    height: 20.99px;
+}
+
+.list-items {
+    padding-left: 16px;
+}
+
+.email-label {
+    display: block;
+    width: max-content;
+    padding-bottom: 8px;
+    color: var(--neutral-color-two);
+}
+
+#email {
+    outline: none;
+    padding: 10px 16px;
+    border: 1px solid var(--neutral-color-three);
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.submit-email {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px;
+    background-color: var(--neutral-color-one);
+    color: var(--neutral-color-four);
+    font-family: inherit;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* .newsletter-image {
+
+} */
+
+.sign-up-image {
+    height: 500px;
 }
