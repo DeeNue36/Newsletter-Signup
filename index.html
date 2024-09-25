@@ -12,14 +12,40 @@
 <body>
     <main class="container">
         <section class="newsletter-details">
-            <h1 class="heading">Stay Updated!</h1>
-            <p class="sub-heading">
+            <h1 class="newsletter-heading">Stay Updated!</h1>
+            <p class="newsletter-subheading">
                 Join 60,000+ product managers receiving monthly updates on:
             </p>
+
+            <div class="newsletter-benefits">
+                <div class="benefits">
+                    <img src="assets/images/icon-list.svg" class="list-icon" alt="list-icon">
+                    <p class="list-items">Product discovery and building what matters</p>
+                </div>
+
+                <div class="benefits">
+                    <img src="assets/images/icon-list.svg" class="list-icon" alt="list-icon">
+                    <p class="list-items">Measuring to ensure updates are a success</p>
+                </div>
+                    
+                <div class="benefits">
+                    <img src="assets/images/icon-list.svg" class="list-icon" alt="list-icon">
+                    <p class="list-items">And much more!</p>
+                </div>  
+            </div>
+
+            <form>
+                <label for="email" class="email-label">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="email@company.com">
+
+                <button type="submit" class="submit-email" id="submit-email">
+                    <span>Subscribe to monthly newsletter</span>
+                </button>
+            </form>
         </section>
 
         <section class="newsletter-image">
-            <img src="assets/images/illustration-sign-up-desktop.svg" alt="sign-up">
+            <img src="assets/images/illustration-sign-up-desktop.svg" class="sign-up-image" alt="-newsletter-sign-up">
         </section>
     </main>
 </body>
