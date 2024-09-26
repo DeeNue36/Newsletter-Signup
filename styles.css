@@ -29,16 +29,17 @@ body {
 
 .container {
     background-color: var(--neutral-color-four);
-    border-radius: 8px;
+    border-radius: 18px;
     padding: 20px;
+    width: 64%;
     /* height: 500px; */
     display: flex;
     column-gap: 25px;
 }
 
 .newsletter-details {
-    /* padding: 50px 25px; */
-    place-content: center; /* OR place-self: center; */
+    padding-left: 32px;
+    place-content: center; /** OR place-self: center; */
 }
 
 .newsletter-heading {
@@ -56,13 +57,17 @@ body {
     padding-bottom: 10px;
 }
 
+.benefits:last-child {
+    padding-bottom: 40px;
+}
+
 .list-icon {
     width: 20.99px;
     height: 20.99px;
 }
 
 .list-items {
-    padding-left: 16px;
+    padding-left: 12px;
 }
 
 .email-label {
@@ -77,7 +82,7 @@ body {
     padding: 10px 16px;
     border: 1px solid var(--neutral-color-three);
     border-radius: 5px;
-    width: 100%;
+    width: 92%;
     margin-bottom: 20px;
 }
 
@@ -90,7 +95,7 @@ body {
     color: var(--neutral-color-four);
     font-family: inherit;
     font-weight: 700;
-    width: 100%;
+    width: 92%;
     cursor: pointer;
 }
 
@@ -99,5 +104,5 @@ body {
 } */
 
 .sign-up-image {
-    height: 500px;
+    height: 450px;
 }
