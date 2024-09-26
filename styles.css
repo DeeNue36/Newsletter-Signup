@@ -30,15 +30,14 @@ body {
 .container {
     background-color: var(--neutral-color-four);
     border-radius: 18px;
-    padding: 20px;
+    padding: 15px;
     width: 64%;
-    /* height: 500px; */
     display: flex;
     column-gap: 25px;
 }
 
 .newsletter-details {
-    padding-left: 32px;
+    padding: 16px 0 8px 32px;
     place-content: center; /** OR place-self: center; */
 }
 
