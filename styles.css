@@ -98,9 +98,9 @@ body {
     cursor: pointer;
 }
 
-/* .newsletter-image {
-
-} */
+.submit-email:hover {
+    background-color: var(--primary-color);
+}
 
 .sign-up-image {
     height: 450px;
