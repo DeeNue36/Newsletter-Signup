@@ -42,7 +42,7 @@ body {
     place-content: center; /** OR place-self: center; */
 }
 
-.newsletter-heading {
+.newsletter-heading, .modal-heading {
     font-size: 36px;
     color: var(--neutral-color-one);
     padding-bottom: 20px;
@@ -105,4 +105,25 @@ body {
 
 .sign-up-image {
     height: 450px;
+}
+
+.modal {
+    width: 40%;
+    background-color: var(--neutral-color-four);
+    border-radius: 18px;
+    padding: 32px 48px;
+}
+
+.close-modal {
+    font-family: inherit;
+    width: 100%;
+    color: var(--neutral-color-four);
+    background-color: var(--neutral-color-one);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
 }
