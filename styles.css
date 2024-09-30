@@ -86,6 +86,10 @@ body {
     margin-bottom: 20px;
 }
 
+#email:hover {
+    border: 1px solid var(--neutral-color-one);
+}
+
 .submit-email {
     border: none;
     outline: none;
@@ -99,7 +103,7 @@ body {
     cursor: pointer;
 }
 
-.submit-email:hover {
+.submit-email:hover, .close-modal:hover {
     background-image:  linear-gradient(to right, #ff527b, #ff556b, #ff5a5c, #ff614b, #ff6a3a);
 }
 
