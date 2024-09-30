@@ -23,6 +23,7 @@ body {
     background-color: var(--neutral-color-one);
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -99,7 +100,7 @@ body {
 }
 
 .submit-email:hover {
-    background-color: var(--primary-color);
+    background-image:  linear-gradient(to right, #ff527b, #ff556b, #ff5a5c, #ff614b, #ff6a3a);
 }
 
 .sign-up-image {
