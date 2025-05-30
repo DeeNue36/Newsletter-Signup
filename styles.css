@@ -141,6 +141,8 @@ body {
     display: block;
 }
 
-.error-mode {
+#email.error-mode {
     border: 1px solid #ff1f1f;
+    background: #ff1f1f32;
+    color: var(--primary-color);
 }
