@@ -70,6 +70,15 @@ body {
     padding-left: 12px;
 }
 
+form {
+    width: 90%;
+}
+
+.email-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .email-label {
     display: block;
     width: max-content;
@@ -82,7 +91,7 @@ body {
     padding: 10px 16px;
     border: 1px solid var(--neutral-color-three);
     border-radius: 5px;
-    width: 92%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -99,7 +108,7 @@ body {
     color: var(--neutral-color-four);
     font-family: inherit;
     font-weight: 700;
-    width: 92%;
+    width: 100%;
     cursor: pointer;
 }
 
