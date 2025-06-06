@@ -34,7 +34,7 @@ body {
     padding: 15px;
     /* width: 64%; */
     display: flex;
-    column-gap: 25px;
+    column-gap: 48px;
 }
 
 .newsletter-details {
@@ -71,7 +71,7 @@ body {
 }
 
 form {
-    width: 90%;
+    width: 100%;
 }
 
 .email-header {
@@ -83,7 +83,14 @@ form {
     display: block;
     width: max-content;
     padding-bottom: 8px;
+    font-weight: 700;
     color: var(--neutral-color-two);
+}
+
+.error-message {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 700;
 }
 
 #email {
