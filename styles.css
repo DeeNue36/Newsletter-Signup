@@ -120,6 +120,10 @@ form {
     height: 450px;
 }
 
+.sign-up-image-mobile {
+    display: none;
+}
+
 .modal {
     display: none;
     width: 40%;
@@ -159,10 +163,32 @@ form {
 
 /** Media Queries */
 @media (max-width: 480px) {
+    body {
+        display: block;
+        background-color: transparent;
+        overflow-y: scroll;
+        height: 100%;
+    }
     .container {
         flex-direction: column-reverse;
+        padding: 0;
+        height: 100%;
+        justify-content: flex-end;
+        border-radius: 0;
+    }
+    .newsletter-details {
+        padding: 0 32px;
+        margin: 64px 0 64px;
+    }
+    form {
+        width: 100%;
     }
     .sign-up-image {
+        display: none;
+    }
+    .sign-up-image-mobile {
+        display: block;
         width: 100%;
+        height: 100%;
     }
 }
