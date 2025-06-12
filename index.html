@@ -37,7 +37,7 @@
             <form>
                 <div class="email-header">
                     <label for="email" class="email-label">Email Address</label>
-                    <span class="error-message">Please</span>
+                    <span class="error-message"></span>
                 </div>
                 <input type="email" id="email" name="email" placeholder="email@company.com">
 
@@ -53,16 +53,17 @@
         </section>
     </main>
 
-    <section class="modal">
+    <section class="modal hide">
         <div class="confirmation-modal">
+            
             <img src="assets/images/icon-success.svg" alt="success">
+
             <h1 class="modal-heading">
                 Thanks for subscribing!
             </h1>
-            <p class="modal-message">
-                A confirmation email has been sent to <b> ash@loremcompany.com.</b>
-                Please open it and click the button inside to confirm your subscription.
-            </p>
+
+            <p class="modal-message"></p>
+
             <button type="reset" class="close-modal">
                 Dismiss message
             </button>
