@@ -1,3 +1,4 @@
+// * Get DOM Elements
 const newsletterContainer = document.querySelector('.container');
 const emailField = document.getElementById('email');
 const submitEmail = document.getElementById('submit-email');
@@ -7,6 +8,7 @@ const modalMessage = document.querySelector('.modal-message');
 const dismissModal = document.querySelector('.close-modal');
 
 
+//* Submit the email and test for a valid email
 submitEmail.addEventListener('click', (e) => {
     e.preventDefault();
 
@@ -14,7 +16,11 @@ submitEmail.addEventListener('click', (e) => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     if (emailValue === '' || !emailRegex.test(emailValue)) {
-        emailField.classList.toggle('error-mode');
+        emailField.classList.add('error-mode');
+        emailField.classList.add('error-vibrate');
+        setTimeout(() => {
+            emailField.classList.remove('error-vibrate');
+        }, 2000);
         errorMessage.textContent = 'Valid email required';
     }
     else {
@@ -27,7 +33,7 @@ submitEmail.addEventListener('click', (e) => {
     // console.log(`Email: ${emailValue}`);
 });
 
-
+// * Dismiss or Close the modal
 dismissModal.addEventListener('click', () => {
     modal.classList.remove('show');
     newsletterContainer.classList.remove('hide');
