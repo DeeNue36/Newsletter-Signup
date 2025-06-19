@@ -30,7 +30,7 @@ submitEmail.addEventListener('click', (e) => {
         modal.classList.add('show');
         modalMessage.innerHTML = `A confirmation email has been sent to <b>${emailValue}</b>. Please open it and click the button inside to confirm your subscription.`;
     }
-    // console.log(`Email: ${emailValue}`);
+    
 });
 
 // * Dismiss or Close the modal
