@@ -203,6 +203,12 @@ form {
 
 
 /** Media Queries */
+@media screen and (max-width: 968px) {
+    .modal {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 834px) { 
     .modal {
         width: 72%;
