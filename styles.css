@@ -32,7 +32,6 @@ body {
     background-color: var(--neutral-color-four);
     border-radius: 18px;
     padding: 15px;
-    /* width: 64%; */
     display: flex;
     column-gap: 48px;
 }
@@ -212,6 +211,31 @@ form {
 @media screen and (max-width: 834px) { 
     .modal {
         width: 72%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        column-gap: 36px;
+    }
+    .newsletter-details {
+        padding: 16px 0 8px 16px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .container {
+        column-gap: 24px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .container {
+        padding: 12px;
+        column-gap: 16px;
+    }
+    .newsletter-details {
+        padding: 16px 0 4px 8px;
     }
 }
 
