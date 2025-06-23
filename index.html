@@ -11,7 +11,7 @@
 </head>
 <body>
     <main class="container">
-        <section class="newsletter-details">
+        <div class="newsletter-details">
             <h1 class="newsletter-heading">Stay Updated!</h1>
             <p class="newsletter-subheading">
                 Join 60,000+ product managers receiving monthly updates on:
@@ -39,22 +39,22 @@
                     <label for="email" class="email-label">Email Address</label>
                     <span class="error-message"></span>
                 </div>
-                
+
                 <input type="email" id="email" name="email" placeholder="email@company.com">
 
                 <button type="submit" class="submit-email" id="submit-email">
                     <span>Subscribe to monthly newsletter</span>
                 </button>
             </form>
-        </section>
+        </div>
 
-        <section class="newsletter-image">
+        <div class="newsletter-image">
             <img src="assets/images/illustration-sign-up-desktop.svg" class="sign-up-image" alt="-newsletter-sign-up" />
             <img src="assets/images/illustration-sign-up-mobile.svg" class="sign-up-image-mobile" alt="-newsletter-sign-up" />
-        </section>
+        </div>
     </main>
 
-    <section class="modal hide">
+    <div class="modal hide">
         <div class="confirmation-modal">
 
             <img src="assets/images/icon-success.svg" alt="success">
@@ -71,7 +71,7 @@
             Dismiss message
         </button>
 
-    </section>
+    </div>
 
     <script src="newsletter.js"></script>
 </body>
