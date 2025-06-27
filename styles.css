@@ -239,6 +239,16 @@ form {
     }
 }
 
+@media screen and (max-width: 577px) {
+    .newsletter-image {
+        height: 100%;
+    }
+    .sign-up-image {
+        width: 208px;
+        transform: scaleY(1.36);
+    }
+}
+
 
 @media screen and (max-width: 480px) {
     body {
