@@ -7,13 +7,16 @@
 }
 
 :root {
-    --primary-color: hsl(4, 100%, 67%);
-    --neutral-color-one: hsl(234, 29%, 20%);
-    --neutral-color-two: hsl(235, 18%, 26%);
-    --neutral-color-three: hsl(231, 7%, 60%);
-    --neutral-color-four: hsl(0, 0%, 100%);
-    /* button hover color */
+    --primary-color: #ff6257;
+    --neutral-color-one: #242742;
+    --neutral-color-two: #36384e;
+    --neutral-color-three: #9294a0;
+    --neutral-color-four: #ffffff;
+    /** button hover color */
     --button-hover-color: linear-gradient(to right, #ff527b, #ff556b, #ff5a5c, #ff614b, #ff6a3a);
+    /** error state color */
+    --error-color: #ff1f1f;
+    --error-background: #ff1f1f32;
     --p-font-size: 16px;
 }
 
@@ -35,7 +38,7 @@ body {
     border-radius: 18px;
     padding: 0.9rem;
     display: flex;
-    column-gap: 48px;
+    column-gap: 3rem;
 }
 
 .newsletter-details {
@@ -176,13 +179,13 @@ form {
     display: block;
 }
 
-#email.error-mode {
-    border: 1px solid #ff1f1f;
-    background: #ff1f1f32;
+.email-input.error-mode {
+    border: 1px solid var(--error-color);
+    background: var(--error-background);
     color: var(--primary-color);
 }
 
-#email.error-mode::placeholder {
+.email-input.error-mode::placeholder {
     color: var(--primary-color);
 }
 
