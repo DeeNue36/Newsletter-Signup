@@ -9,7 +9,7 @@ const dismissModal = document.querySelector('.close-modal');
 
 
 //* Submit the email and test for a valid email
-submitEmail.addEventListener('submit', (e) => {
+submitEmail.addEventListener('click', (e) => {
     e.preventDefault();
 
     const emailValue = emailField.value;
